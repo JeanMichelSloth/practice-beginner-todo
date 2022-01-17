@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    color: white;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+label {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 40px;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: white;
+    color: #111;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+#creation {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#creation .task {
+    display: flex;
+    align-items: center;
+}
+
+#consultation {
+    display: flex;
+    flex-direction: column;
+}
+
+#consultation label {
+    cursor: pointer;
+}
+
+#consultation label:hover {
+    text-decoration: line-through;
+}
+
+#consultation input[type="checkbox"] {
+    appearance: none;
+}
+
+#consultation input[type="checkbox"]:checked ~ label {
+    text-decoration: line-through;
+}
+
+.checked {
+    text-decoration: line-through;
+}
